@@ -1,0 +1,18 @@
+[project]
+name = "custom_otel_instrumentation"
+description = "instrumentation experiments"
+version = "0.0.0"
+authors = [
+    { name = "Nathan Slaughter", email = "n@notalot.com" }
+]
+dependencies = [
+    "pyspark[ml]",
+    "sklearn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pre-commit",
+    "bump2version"
+]
